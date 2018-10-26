@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: claims-fraud-controller
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8888
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+server:
+  port: 8080
